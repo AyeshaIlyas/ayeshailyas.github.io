@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=
+    "viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>
+      Flight Delay Prediction
+    </title><!-- Favicon-->
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- Font Awesome icons (free version)-->
+
+    <script crossorigin="anonymous" src=
+    "https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script><!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    rel="stylesheet" type="text/css">
+    <link href=
+    "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel=
+    "stylesheet" type="text/css"><!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"><img alt="..." src=
+        "assets/img/plane-logo.png"></a> <button aria-controls=
+        "navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler" data-bs-target="#navbarResponsive"
+        data-bs-toggle="collapse" type="button">Menu <i class=
+        "fas fa-bars ms-1"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#eda">The Data</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#ml-1">ML Models</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusions">Conclusions</a>
+            </li>
+            
+<!--             <li class="nav-item">
+              <a class="nav-link" href="#predictions">Use Our Product</a>
+            </li> -->
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Meet Us</a>
+            </li>
+
+<!--             <li class="nav-item">
+              <a class="nav-link" href="#contact"></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">
+          Genesis Generators
+        </div>
+
+        <div class="masthead-heading text-uppercase">
+          Flight Delay Prediction
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#about">Learn
+        More</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="https://cocalc1.ai-camp.dev/838eb5ae-f412-43b6-91c0-694401a393a1/port/12346/">Predict</a>
+      </div>
+    </header>
+    <!-- About The Project -->
+
+    <section class="page-section bg-light" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            About Our Project
+          </h2>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              A delayed flight, which causes a last-minute shift in schedule
+              and unneeded time in an airport, is every flier’s worst
+              nightmare. To prevent fliers from having to deal with this
+              inconvenience, our team developed a model which can show users if
+              there will be a delay. Both airport companies and fliers will be
+              able to use this model to adjust their schedules accordingly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Process -->
+
+    <section class="page-section" id="the-proces">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            The Process
+          </h2>
+          <!--                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+        </div>
+
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <h3 class="numbers">
+                1
+              </h3>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  Week One
+                </h4>
+
+                <h4 class="subheading">
+                  Exploratory Data Analysis
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  During our first week of development, our team learned more
+                  about the problem through exploratory data
+                  analysis (EDA).
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            
+            <div class="timeline-image">
+              <h3 class="numbers">
+                2
+              </h3>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  Week Two
+                </h4>
+
+                <h4 class="subheading">
+                  Machine Learning
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  During our second week of development, we tackled the major
+                  problem at hand; predicting if there would actually be a
+                  delay.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-image">
+              <h3 class="numbers">
+                3
+              </h3>
+            </div>
+
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>
+                  Week 3
+                </h4>
+
+                <h4 class="subheading">
+                  Deploying Our Website
+                </h4>
+              </div>
+
+              <div class="timeline-body">
+                <p class="text-muted">
+                  During our last week of development, our team created the
+                  very website you're browsing through!
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                End
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- EDA -->
+
+    <section class="page-section bg-light" id="eda">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Exploratory Data Analysis
+          </h2>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              Before predicting any delay behaviors, we needed to establish an
+              understanding of the data we were working with; what correlations
+              could we find between the airline being traveled, or the length
+              of the flight, and the flight being delayed? What do these
+              correlations (or lack thereof) mean?
+            </p>
+
+            <p class="text-muted">
+              We established these connections through EDA, or Exploratory Data
+              Analysis. As the name suggests, we explored our data through
+              plots and visualizations in order to gain a deeper understanding
+              of the meaning behind the numbers on the spreadsheet. We used the
+              <a href=
+              "https://www.kaggle.com/code/jominjae/airline-delay-prediction-logistic-decisiontree/data"
+              target="_blank">Airline Delay Prediction Dataset</a> on Kaggle.
+            </p>
+          </div>
+
+          <div class="col-md-12">
+            <h4 class="my-3">
+              General Observations
+            </h4>
+
+            <p class="text-muted">
+              The plots we created compared our independent variables (Flight
+              length, departure time, airline, etc) to our target, in order for
+              us to find the most relevant trends. The specifics for each plot
+              are listed below, but the general trends are as follows:
+            </p>
+
+            <ul style="text-align: left;">
+              <li>
+                <p class="text-muted">
+                  Most features have little to no correlation to the occurrence
+                  of a delay
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted">
+                  The arrival time for on time flights is 100 minutes behind
+                  the arrival time for delayed flights.
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted">
+                  Wednesday is the most busy day of the week, followed closely
+                  by Tuesday and Thursday
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted">
+                  Majority of airports (both the beginning and end locations)
+                  have very little documentation, meaning we would benefit from
+                  grouping those airports into an “Other” category
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Data Plots-->
+
+    <section class="page-section portfolio" id="plots">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            The Data
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Understanding the dataset through visualizations
+          </h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/heatmap.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Heatmap
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Relationships between features
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/airlines.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Airlines
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of airlines in the dataset
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/dayOfWeek.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Day of Flight
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of flights based on day of the week
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 4-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/airportFrom.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Source Airports
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of on-time and delayed flights
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <!-- Portfolio item 5-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/airportTo.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Destination Airports
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of on-time and delayed flights
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 6-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src=
+              "./vis/delayedArrivalDist.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Arrival Times - Delay
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of times when flight was delayed
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 7 -->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal7">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src=
+              "./vis/onTimeArrivalDist.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Arrival Times - On Time
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of times when flight was on-time
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <!-- Portfolio item 8 -->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal8">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src=
+              "./vis/delayedDurationDist.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Flight Duration - Delay
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of durations when flight was delayed
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 9-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal9">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src=
+              "./vis/onTimeDurationDist.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Flight Duration - On Time
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Distribution of times when flight was on-time
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Data cleaning -->
+
+    <section class="page-section bg-light" id="data-preparation">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Data Preparation
+          </h2>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              After finding trends in our data through EDA, we knew how we
+              needed to clean our data. A few examples of how we transformed
+              our data include:
+            </p>
+
+            <ul style="text-align: left;">
+              <li>
+                <p class="text-muted" style="color: red;">
+                  Dropping the rows where the flight duration was zero (duration was not
+                  recorded)
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted" style="color: red;">
+                  Dropping unnecessary columns, in this case the id column
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted">
+                  Encoding categorical variables (such as the different airport
+                  names) as numbers
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted">
+                  Cutting down our large sample size of ~500,000 to a random
+                  sample of 5,000 for our data visualization, and 20,000 for
+                  training and testing the model.
+                </p>
+              </li>
+
+              <li>
+                <p class="text-muted" style="color: red;">
+                  Cutting down the number of categories in AirportTo and
+                  AirportFrom by grouping any airport with three or less
+                  samples into an “Other” category
+                </p>
+              </li>
+            </ul>
+
+            <p class="text-muted">
+              These changes were made for the benefit of the model, as
+              computers can’t handle non-numeric categories or such large datasets, but can
+              work with numbers just fine. Similarly, our computers weren’t
+              able to handle such a large amount of data, so cutting down the
+              sample size immensely helped our processing speed without
+              sacrificing too much information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Machine Learning -->
+
+    <section class="page-section" id="ml-1">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Machine Learning
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            An introduction to ML models and the first iteration of our
+            classification models
+          </h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              Now that we know our data, we can start on the bulk of the
+              project: machine learning. We started with a wide set of models,
+              namely KNN, SVM, Gaussian Naive Bayes, Logistic Regression,
+              Gradient Boosting, Random Forest, and Decision Tree. From there,
+              we chose three models to develop further, based on their baseline
+              performance as judged by our chosen performance metrics. The
+              details of these models are discussed below.
+            </p>
+
+            <p class="text-muted">
+              Out of the many metrics available, we prioritized the false
+              positive rate (precision), as we want to minimize the chance of
+              the model predicting there is a delay (a positive prediction)
+              when there isn’t (a false prediction), since this would make the
+              flier late to the flight. Of course, we also kept other
+              performance metrics in mind, such as accuracy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Baseline Models -->
+
+    <section class="page-section bg-light" id="baseline-models">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            TOP 3 BASELINE MODELS
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Understanding Gaussian Naive Bayes, Random Forest, and Gradient
+            Boosting
+          </h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"><i class=
+            "fas fa-circle fa-stack-2x text-primary"></i> <i class=
+            "fas fa-cube fa-stack-1x fa-inverse"></i></span>
+            <h4 class="my-3">
+              Gaussian Naive Bayes
+            </h4>
+
+            <p class="text-muted">
+              Predicts the probability that a certain data point will belong to
+              a certain class; the class with the highest probability is
+              chosen. Naive Bayes is different to other algorithms in that it
+              assumes each feature is independent of each other. This model is
+              efficient with a small sample size and categorical features.
+              However, the seeming benefit of taking each variable as
+              independent can actually be a curse, as many features in real
+              life have an impact on each other.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"><i class=
+            "fas fa-circle fa-stack-2x text-primary"></i> <i class=
+            "fas fa-rocket fa-stack-1x fa-inverse"></i></span>
+            <h4 class="my-3">
+              Gradient Boosting
+            </h4>
+
+            <p class="text-muted">
+              An ensemble method that uses a collection of weak decision
+              trees to build a stronger model. Each new tree uses information
+              from the previous iteration to improve. Because these trees are
+              built to correct the previous one’s errors, Gradient boosting is
+              able to pick up complex patterns. However, it is also more
+              susceptible to noise in the data.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"><i class=
+            "fas fa-circle fa-stack-2x text-primary"></i> <i class=
+            "fas fa-tree fa-stack-1x fa-inverse"></i></span>
+            <h4 class="my-3">
+              Random Forest
+            </h4>
+
+            <p class="text-muted">
+              An ensemble method that operates similarly to Gradient
+              Boosting. However, instead of using information from previous
+              trees to build the next, several trees are made at once,
+              independent of each other. This model benefits from this
+              independence, as it is less susceptible to picking up any noise
+              in the trends, but loses to Gradient Boosting in terms of picking
+              up complex trends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Analysis of Baseline Models -->
+
+    <section class="page-section portfolio" id="baseline-analysis">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Evaluation of Models
+          </h2>
+          <!--                     <h3 class="section-subheading text-muted">Understanding the dataset through visualizations</h3> -->
+
+          <p class="text-muted">
+            Of the many models we tested, the three with the best baseline
+            performances were Gradient Boosting, Random Forest, and Gaussian
+            Naive Bayes. Respectively, they had accuracies of .67, .65, and
+            .63, and precisions of .66, .62, and .59. A confusion matrix (a
+            table comparing the predicted and actual values) for each model is
+            shown below, along with a bar chart depicting the precision and accuracy for
+            each model. As the accuracies for each model were similar, we could
+            safely use precision as our sole qualifying metric for moving
+            models onto hyperparameter tuning.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 10 -->
+
+            <div class="portfolio-item">
+              <img alt="..." class="img-fluid" src="./vis/gnbcm.png">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Gaussian Naive Bayes
+                </div>
+                <!--                                 <div class="portfolio-caption-subheading text-muted">Relationships between features</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 11 -->
+
+            <div class="portfolio-item">
+              <img alt="..." class="img-fluid" src="./vis/gbcm.png">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Gradient Boosting
+                </div>
+                <!--                                 <div class="portfolio-caption-subheading text-muted">Distribution of airlines in the dataset</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 12 -->
+
+            <div class="portfolio-item">
+              <img alt="..." class="img-fluid" src="./vis/rfcm.png">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Random Forest
+                </div>
+                <!--                                 <div class="portfolio-caption-subheading text-muted">Distribution of flights based on day of the week</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 13 -->
+
+            <div class="portfolio-item">
+              <img alt="..." class="img-fluid" src="./vis/metrics.png">
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Accuracy and Precision
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Comparing accuracy and precision for all three models
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hyperparameter Tuning -->
+
+    <section class="page-section bg-light" id="hyperparameter_tuning">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Hyperparameter Tuning
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Finetuning our best baseline models
+          </h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              After we had chosen the models with the best baseline
+              performance, we needed to improve their performance through
+              hyperparameter tuning. Hyperparameter tuning is choosing the
+              optimal settings of each model. To automate the task, we used
+              sklearn’s Grid Search, which allowed us to go through several
+              combinations of hyperparameters for each model. The precision
+              metrics are compared in the bar graph below, along with confusion
+              matrices for each model.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tuning Results -->
+
+    <section class="page-section portfolio" id="tuning">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Tuning Results
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Interpreting our final models
+          </h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal10">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src="./vis/tuning_matrices.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Confusion Matrices
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  The number of correct and incorrect guesses for each model,
+                  displayed on a heatmap
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href=
+              "#portfolioModal11">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img alt="..." class="img-fluid" src=
+              "./vis/tuning_metrics.png"></a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Performance Metrics
+                </div>
+
+                <div class="portfolio-caption-subheading text-muted">
+                  Comparison of the accuracy, precision, recall, and f1 scores
+                  for each model
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Conclusions -->
+
+    <section class="page-section bg-light" id="conclusions">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Conclusions
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Our final thoughts
+          </h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-muted">
+              From the first few iterations of our model, we can figure out
+              what changes need to be made in the future. Firstly, we can
+              perform feature engineering on our two highly important variables
+              (Arrival time and the Airline). Feature engineering includes
+              numerical manipulations such as adding or multiplying the
+              features together. We can also look to increase our processing
+              power, so that we are able to utilize the full dataset, or using
+              an entirely different dataset which includes a greater variety of
+              features.
+            </p>
+
+            <p class="text-muted">
+              Despite the subpar performance of the model, we have built a
+              strong foundation for further research. We have found trends in
+              the data, and developed a model that, if used with higher
+              correlated data, could become more accurate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Team -->
+
+    <section class="page-section" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Our Amazing Team
+          </h2>
+
+          <h3 class="section-subheading text-muted">
+            Meet the people who made this project possible
+          </h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "assets/img/team/ayesha.jpeg">
+              <h4>
+                Ayesha Ilyas
+              </h4>
+
+              <p class="text-muted">
+                I am a programming and coffee aficionado. I love all things
+                tech-related and enjoy learning about interesting things.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "./vis/aanchal%20poddar.png">
+              <h4>
+                Aanchal Poddar
+              </h4>
+              <p class="text-muted"> Currently a senior at Amity High School. I spend my free time studying the arts, coding, and just about everything in-between. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "./vis/justin_yang.jpeg">
+              <h4>
+                Justin Yang
+              </h4>
+
+              <p class="text-muted"> I enjoy coding and sports. I love playing baseball and messing around in Python.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "./vis/default_pfp.jpg">
+              <h4>
+                Sarah Torres
+              </h4>
+
+              <p class="text-muted"> 
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "assets/img/team/sanjanakonka.JPG">
+              <h4>
+                Sanjana Konka
+              </h4>
+
+              <p class="text-muted"> I am a senior at Poolesville High School. I love coding, playing the flute, and tennis.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img alt="..." class="mx-auto rounded-circle" src=
+              "assets/img/team/Samuel.jpg">
+              <h4>
+                Samuel O'Neil
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright © 2022
+          </div>
+
+          
+
+          <div class="col-lg-4 text-lg-end">
+ <!--           <a class="link-dark text-decoration-none me-3" href="#!">Privacy
+            Policy</a> <a class="link-dark text-decoration-none" href=
+            "#!">Terms of Use</a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal1" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Heatmap
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                                                      <img class="img-fluid d-block mx-auto" src="vis/heatmap.png" alt="..." />
+<!--                  <iframe height="500" width="600" src=
+                  "interactive_plots/correlation_matrix.html" title="Heatmap"
+                  ></iframe> -->
+                  <p>
+                    The heatmap displays the correlation between each of the
+                    features in our dataset. Since there is low correlation
+                    between the numeric variables and target variables, we
+                    tried many different transformations on the data to                           achieve the best results.
+                  </p>
+
+<!--                  <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Threads
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Illustration
+                    </li> 
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal2" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Airlines
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>-->
+                  <!--                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." /> -->
+                   <iframe height="500" src=
+                  "interactive_plots/airline_delays_vs_on_time.html" title=
+                  "number of delays (1) or on-time arrivals (0) per airline"
+                  width="600"></iframe>
+                  <p>
+                    The bar graph shows the amount of delayed flights compared
+                    to the on time flights per airline. The red bar means that
+                    the flight was delayed and the blue bar means that the
+                    flight was on time. The delays versus the on time flights
+                    are fairly balanced between all of the airlines except WN,
+                    which is Southwest. Southwest has almost double the amount
+                    of delays than on time flights. Southwest also has almost
+                    twice the total amount of flights compared to the second
+                    most common airline.
+                  </p>
+
+<!--                  <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Explore
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Graphic Design
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal3" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Day of Flight
+                  </h2>
+
+ <!--                 <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                  <!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." /> -->
+                  <iframe height="500" src=
+                  "interactive_plots/day_of_week_delay_vs_on_time.html" title=
+                  "number of delays for each day of the week" width=
+                  "600"></iframe>
+                  <p>
+                    The bar graph shows the number of delays versus the on                         time flights for each day of the week. Flights were most                       common during the middle of the week: Tuesday, Wednesday,                     and Thursday. Flights were the least common on Fridays.                       The split between delays and on time flights is about a 2                     to 3 ratio.
+                  </p>
+
+ <!--                 <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Finish
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Identity
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal4" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Source Airports
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                  <!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." /> -->
+                  <iframe height="500" src=
+                  "interactive_plots/airport_from_delay_vs_on_time.html" title=
+                  "number of delays/on-time arrivals per airport from" width=
+                  "600"></iframe>
+                  <p>
+                    The bar graph shows what airport each flight flew from and
+                    if there was a delay or not. The graph shows the busiest
+                    airports on the left. The airports decrease in business as
+                    the graph continues right. The split between the delay and
+                    on time flights are fairly even.
+                  </p>
+
+ <!--                 <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Lines
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Branding
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal5" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Destination Airports
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                  <!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." /> -->
+                   <iframe height="500" src=
+                  "interactive_plots/airport_to_delay_vs_on_time.html" title=
+                  "number of delays/on-time arrivals per airport to" width=
+                  "600"></iframe>
+                  <p>
+                    This bar graph is similar to the previous one, but it shows
+                    where the airplane is flying to. The busiest airports are
+                    ATL, DEN, and PHX. There are usually more on time flights
+                    than delays.
+                  </p>
+
+<!--                  <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Southwest
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Website Design
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal6" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Arrival Times - Delay
+                  </h2>
+
+ <!--                 <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                  <!--         flight lands instead.                             <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." /> -->
+                   <iframe height="500" src=
+                  "interactive_plots/delayedTimeDist.html" title=
+                  "Box Plot of Delayed Arrival Times" width="600"></iframe>
+                  <p>
+                    The box and whisker plot shows the distribution of the
+                    arrival time of delayed flights. The median of the arrival
+                    times of delayed flights is 875. The max and min are 1439
+                    and 50.
+                  </p>
+
+ <!--                 <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Window
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Photography
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 7 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal7" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Arrival Times - On Time
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> 
+                                   <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." /> -->
+                   <iframe height="500" src=
+                  "interactive_plots/onTimeTimeDist.html" title=
+                           "Box Plot of On-time Arrival Times" width="600"> </iframe>
+                  
+<p>
+                    The box and whisker plot shows the distribution of the
+                    arrival times of on time flights. The max and min are
+                    similar to the plot with the arrival times of the delayed
+                    flights, but median, 1st quartile, and 3rd quartile are                       all about 100 less than the delays.
+                  </p>
+<!--                 <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Window
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Photography
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio item 8 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal8" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Flight Duration - Delay
+                  </h2>
+
+<!--                  <p class="item-intro text-muted">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p> -->
+                  <!--                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." /> -->
+                   <iframe height="500" width= "600" src=
+                  "interactive_plots/delayedDurationDist.html" title=
+                  "Box Plot of Flight Durations When Flight was Delayed"></iframe>
+                  <p>
+                    The box and whisker plot shows the distribution of flight
+                    length for delayed flights. The median for flight duration
+                    is 120 minutes for delayed flights.
+                  </p>
+
+ <!--                 <ul class="list-inline">
+                    <li>
+                      <strong>Client:</strong> Window
+                    </li>
+
+                    <li>
+                      <strong>Category:</strong> Photography
+                    </li>
+                  </ul> -->
+                  <button class="btn btn-primary btn-xl text-uppercase"
+                  data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- Portfolio item 9 modal popup-->
+
+    <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal9" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Flight Duration - On Time
+                  </h2>
+                  <iframe height="500" width= "600" src=
+"interactive_plots/onTimeDurationDist.html" title=
+                  "Box Plot of Flight Durations When Flight was On-time"></iframe>
+                  <p>
+                    The box and whisker plot shows the distribution of                             flight duration for on time flights. All the values are roughly
+                      the same as the delayed flights, so this variable will
+                      have little impact on our model.
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!--  ML Models Modals  -->
+    <!--   ML Model 1    -->
+     <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal10" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Confusion Matrices
+                  </h2>
+                  <img class="img-fluid d-block mx-auto" src="vis/tuning_matrices.png" alt="..." />
+                  <p>
+                    Looking at the confusion matrix for gradient boosting, we can see that the model predicts there is no delay 70% of the time. Since this is similar to the split between delays and on-time flights, but the performance metrics show that the model is correct 65% of the time, it’s likely that the model picked up on this trend and replicated it.
+                  </p>
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!--   ML Model 2    -->
+     <div aria-hidden="true" class="portfolio-modal modal fade" id=
+    "portfolioModal11" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img alt="Close modal" src="assets/img/close-icon.svg">
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- Project details-->
+
+                  <h2 class="text-uppercase">
+                    Performance Metrics
+                  </h2>
+                  <iframe height="500" width= "600" src=
+"interactive_plots/tuning_metrics.html" title=
+                  "Metrics for 3 Models"></iframe>
+                  <p>
+                    After tuning, we chose the Gradient Boosting Classifier, as it had the best balance between the precision, f1 score, accuracy, and recall. For example, although Gaussian Naive Bayes had a higher recall (.51) and f1 score (.54) than both other models, it had a significantly lower accuracy (.61) and precision (.57). Random Forest also performed very well, and could safely be suggested as an alternative, as it scored similarly to, but slightly lower than, the Gradient Boosting Classifier.</p>
+                  
+                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class=
+                  "fas fa-xmark me-1"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    <!-- Bootstrap core JS-->
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+     
+    <script src="js/scripts.js"></script> 
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     
+    <!-- * *                               SB Forms JS                               * *-->
+     
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+     
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
